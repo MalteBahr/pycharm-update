@@ -19,7 +19,7 @@ fi
 if [[ -f $1 ]]; then
     echo "$1 is a file, but should be a directory"
 elif [[ -d $1 ]]; then
-    echo "removing old directory $1?"
+    echo "removing old directory $1"
     rm -rf $1
 else
     echo "$1 is not valid"
